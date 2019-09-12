@@ -13,7 +13,8 @@ class Form extends Component {
 
     submitForm = (event) => {
         event.preventDefault();
-        console.log(this.state.username, this.state.password)
+        const { username, password } = this.state;
+        console.log(username, password)
     }
     render() {
         return (
