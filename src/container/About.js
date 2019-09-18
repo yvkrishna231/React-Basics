@@ -1,30 +1,17 @@
 import React, { Component } from 'react'
-import Handle from './Handle';
-import { Link } from 'react-router-dom';
 class About extends Component {
-    subFun = () => {
+    changeFun = () => {
         this.props.history.push('/register')
     }
     render() {
+        // console.log(this.props)
         return (
-            <div className='bg-white' >
-                <Handle />
-                <h1 className='text-warning'> About Page</h1>
-                <button className='btn btn-outline-danger' onClick={this.subFun}>click me</button>
-                <ul className="pagination bg-dark justify-content-center ">
-                    <li className="page-item ">
-                        <Link to='/home' className="page-link ">previous</Link>
-                    </li>
-                    <li className="page-item">
-                        <Link to='/home' className="page-link">1</Link>
-                    </li>
-                    <li className="page-item">
-                        <Link to='/about' className="page-link">2</Link>
-                    </li>
-                </ul>
+            <div className='bg-light text-success'>
+                <h1 className='text-grey'>About Page</h1>
+                {/* {this.props.location.state} */}
+                <button className='btn btn-outline-danger' onClick={this.changeFun} >click me</button>
             </div>
         )
     }
 }
-
 export default About
