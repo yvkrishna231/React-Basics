@@ -20,6 +20,9 @@ class Handle extends Component {
                         <li className="nav-item">
                             <NavLink activeClassName='highlight' to='/register' className='nav-link'>Register</NavLink>
                         </li>
+                        <li className="nav-item">
+                            <NavLink activeClassName='highlight' to='/greet' className='nav-link'>Greet</NavLink>
+                        </li>
                     </ul>
                 </nav>
 
